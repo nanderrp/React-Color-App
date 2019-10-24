@@ -4,6 +4,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
+import { Link } from 'react-router-dom';
 import 'rc-slider/assets/index.css';
 import './Navbar.css';
 import Slider from 'rc-slider';
@@ -31,7 +32,7 @@ export default class Navbar extends Component {
         return (
             <nav className="Navbar">
                 <div className="logo">
-                    <a href="/">Palette Master</a>
+                    <Link to='/'>Palette Master</Link>
                 </div>
                 <div className="Slider-container">
                     <span>Level: {level}</span>
