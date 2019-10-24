@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ColorBox from './ColorBox';
+import 'rc-slider/assets/index.css';
 import './Palette.css';
 import Slider from 'rc-slider';
-import 'rc-slider/assets/index.css';
+
 
 
 export default class Palette extends Component {
@@ -25,7 +26,9 @@ export default class Palette extends Component {
         ));
         return (
             <div className="Palette">
+                <div className="Slider">
                 <Slider defaultValue={level} min={100} max={900} step={100} onAfterChange={this.changeLevel}/>
+                </div>
                 <div className="Palette-colors">
                 {colorBoxes}
                 </div>
