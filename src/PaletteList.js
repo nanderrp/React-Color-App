@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MiniPalette from './MiniPalette';
 import { withStyles } from "@material-ui/styles";
-import { Link } from 'react-router-dom';
+
 
 class PaletteList extends Component {
     render() {
@@ -26,7 +26,7 @@ class PaletteList extends Component {
 const styles = {
     root: {
         backgroundColor: "blue",
-        height: "100%",
+        height: "100vh",
         display: "flex",
         alignItems: "flex-start",
         justifyContent: "center"
